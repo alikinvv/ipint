@@ -114,6 +114,20 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 40px;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
 p {
 	line-height: 1.5;
 	margin-bottom: 24px;
@@ -578,6 +592,10 @@ a {
 .icons {
 	padding: 84px 0 50px;
 
+	& + .text {
+		padding-top: 20px;
+	}
+
 	& + .btn.arrow {
 		margin-top: -40px;
 		top: -27px;
@@ -1014,6 +1032,23 @@ a {
 	& + .icons {
 		margin-top: -90px;
 	}
+
+	.flex {
+		display: flex;
+
+		& > div {
+			width: 50%;
+		}
+
+		ul {
+			li {
+				text-transform: uppercase;
+				font-size: 16px;
+				line-height: 1.5;
+				font-weight: 600;
+			}
+		}
+	}
 }
 
 .trigger {
@@ -1030,6 +1065,18 @@ a {
 	cursor: pointer;
 	transition: $trans;
 	margin-top: 20px;
+
+	&.w80 {
+		width: 85.4%;
+	}
+
+	&.w70 {
+		width: 75.4%;
+	}
+
+	&.w60 {
+		width: 65.4%;
+	}
 
 	&.active {
 		&::before {
@@ -1070,6 +1117,18 @@ a {
 		display: none;
 		margin-bottom: 20px;
 
+		&.w80 {
+			width: 85.4%;
+		}
+
+		&.w70 {
+			width: 75.4%;
+		}
+	
+		&.w60 {
+			width: 65.4%;
+		}
+
 		&.active {
 			display: block;
 		}
@@ -1085,6 +1144,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 40px;
 
 	form {
 		width: 437px;
