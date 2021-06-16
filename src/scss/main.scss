@@ -1039,14 +1039,14 @@ a {
 		& > div {
 			width: 50%;
 		}
+	}
 
-		ul {
-			li {
-				text-transform: uppercase;
-				font-size: 16px;
-				line-height: 1.5;
-				font-weight: 600;
-			}
+	ul {
+		li {
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 600;
 		}
 	}
 }
@@ -1065,18 +1065,6 @@ a {
 	cursor: pointer;
 	transition: $trans;
 	margin-top: 20px;
-
-	&.w80 {
-		width: 85.4%;
-	}
-
-	&.w70 {
-		width: 75.4%;
-	}
-
-	&.w60 {
-		width: 65.4%;
-	}
 
 	&.active {
 		&::before {
@@ -1117,18 +1105,6 @@ a {
 		display: none;
 		margin-bottom: 20px;
 
-		&.w80 {
-			width: 85.4%;
-		}
-
-		&.w70 {
-			width: 75.4%;
-		}
-	
-		&.w60 {
-			width: 65.4%;
-		}
-
 		&.active {
 			display: block;
 		}
@@ -1137,6 +1113,22 @@ a {
 			display: block;
 		}
 	}
+}
+
+.w80 {
+	width: 85.4%;
+}
+
+.w70 {
+	width: 75.4%;
+}
+
+.w60 {
+	width: 65.4%;
+}
+
+.w50 {
+	width: 55.4%;
 }
 
 .print {
